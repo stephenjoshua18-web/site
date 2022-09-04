@@ -186,7 +186,61 @@
         </div>
 
         <div class="executive-summary" itemprop="description">
-          <p>Because i am passionate about technology, i started my career as a Network Engineer and over the years i have acquired the skills and versatility of a DevOps Engineer. With 3+ years of experience, i am seeking to leverage proven continuous deployment skills at your organization. Having worked as a DevOps engineer at Keygroup, I was able to cut the customer complaint rate by 50% for a Saas application. With in-depth AWS and AZURE public cloud experience, I get the job done. I am exceedingly comfortable working in the areas of DevOps, Software Configuration Management, Database Administration, Linux administration, Cisco networking, Version Control, and Cloud Integration.</p>
+          <p>Because i am passionate about technology, i started my career as a Network Engineer and over the years i have acquired the skills and versatility of a DevOps Engineer. With 3+ years of experience, i am seeking to leverage proven continuous deployment skills at your organization. Having worked as a DevOps engineer at Keygroup, I was able to cut the customer complaint rate by 50% for a Saas application.<span id="points">...</span> <span id="moreText">With in-depth AWS and AZURE public cloud experience, I get the job done. I am exceedingly comfortable working in the areas of DevOps, Software Configuration Management, Database Administration, Linux administration, Cisco networking, Version Control, and Cloud Integration.</span></p>
+		   <!-- Trigger toggleText() when the 
+        button is clicked -->
+    <button onclick="toggleText()" id="textButton">
+        Show More
+    </button>
+  
+    <script>
+        function toggleText() {
+  
+            // Get all the elements from the page
+            var points = 
+                document.getElementById("points");
+  
+            var showMoreText =
+                document.getElementById("moreText");
+  
+            var buttonText =
+                document.getElementById("textButton");
+  
+            // If the display property of the dots 
+            // to be displayed is already set to 
+            // 'none' (that is hidden) then this 
+            // section of code triggers
+            if (points.style.display === "none") {
+  
+                // Hide the text between the span
+                // elements
+                showMoreText.style.display = "none";
+  
+                // Show the dots after the text
+                points.style.display = "inline";
+  
+                // Change the text on button to 
+                // 'Show More'
+                buttonText.innerHTML = "Show More";
+            }
+  
+            // If the hidden portion is revealed,
+            // we will change it back to be hidden
+            else {
+  
+                // Show the text between the
+                // span elements
+                showMoreText.style.display = "inline";
+  
+                // Hide the dots after the text
+                points.style.display = "none";
+  
+                // Change the text on button
+                // to 'Show Less'
+                buttonText.innerHTML = "Show Less";
+            }
+        }
+    </script>
         </div>
 
         
